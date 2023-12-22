@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>instragram</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="Index.js" />
+
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 30%;
+      margin: auto;
+      border: 1px solid lightsteelblue;
+    }
+
+    .insta {
+      width: 200px;
+      height: 100px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    #data {
+      width: 270px;
+      height: 40px;
+      border-radius: 5px;
+      border: 1px solid lightsteelblue;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    #princy{
+      width: 270px;
+      height: 40px;
+      border-radius: 5px;
+      border: 1px solid lightsteelblue;
+      font-size: 12px;
+    }
+
+    .inputs {
+      text-align: center;
+      position: relative;
+    }
+
+    #show {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 60px;
+    }
+
+    #log-in {
+      width: 270px;
+      height: 35px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      background-color: #1b74e4;
+      border: none;
+      margin-top: 30px;
+    }
+
+    .or {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 30px;
+      text-align: center;
+      gap: 20px;
+    }
+
+    .facebook {
+      font-size: 20px;
+      color: blue;
+      padding-top: 30px;
+      text-align: center;
+    }
+
+    .forget {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .nothing {
+      width: 100px;
+      height: 1px;
+      background-color: black;
+    }
+
+    section {
+      width: 30%;
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    .section-01 {
+      text-align: center;
+      border: 1px solid lightsteelblue;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #1b74e4;
+    }
+
+    .do {
+      font-size: 18px;
+      padding: 15px;
+    }
+
+    .section-02 {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .imges {
+      padding-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image1 {
+      width: 150px;
+      height: 70px;
+    }
+
+    .image2 {
+      width: 150px;
+      height: 70px;
+
+    }
+
+    .photo {
+      width: 150px;
+      height: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="insta">
+      <i data-visualcompletion="css-img" aria-label="Instagram" class="" role="img"
+        style="background-image: url(&quot;https://static.cdninstagram.com/rsrc.php/v3/ys/r/WBLlWbPOKZ9.png&quot;); background-position: 0px 0px; background-size: 176px 264px; width: 174px; height: 50px; background-repeat: no-repeat; display: inline-block;"></i>
+    </div>
+
+    <div class="inputs">
+      <input type="text" id="data" placeholder="Phone number,Username or Email adderess" />
+      <br>
+      <input type="password" onclick="inputPass()" id="princy" placeholder="Password" />
+      <p type="text" onclick="showPass()" id="show">Show</p>
+
+      <br>
+      <button id="log-in">Log in</button>
+    </div>
+
+    <div class="or">
+      <div class="nothing"></div>OR
+      <div class="nothing"></div>
+    </div>
+
+    <div class="facebook">
+
+      <i class="fa-brands fa-square-facebook"></i>
+      Log in with Facebook
+    </div>
+
+    <div class="forget">
+      <p>Forgotten your password?</p>
+    </div>
+  </div>
+  <section>
+    <div class="section-01">
+      <p class="do">Don't have an account? <a href="">Sign up</a></p>
+    </div>
+  </section>
+  <div class="section-02">
+    <p class="get">Get the app.</p>
+    <div class="imges">
+      <img src="../IMAGE/IMAGE 5.png" alt="" class="image1">
+      <img class="image2" alt="" src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png">
+    </div>
+  </div>
+  <!-- script start -->
+  <script>
+    
+  </script>
+</body>
+</html>
