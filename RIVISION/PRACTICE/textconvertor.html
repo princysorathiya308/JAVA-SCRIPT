@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text convertor</title>
+    <style>
+        .main{
+            margin: 0 auto;
+            border: 1px solid black;
+            text-align: center;
+            height: 600px;
+            width: 100%;
+            background: url(../IMAGE/image.avif) no-repeat;
+            background-position: center;
+  
+        }
+        
+      h1 {
+        font-size: 50px;
+        text-decoration: double underline purple;
+        padding: 20px;
+      }
+      input {
+        width: 45%;
+        border: 2px solid black;
+        padding: 16px 20px;
+        font-size: 20px;
+      }
+      button {
+        width: 10%;
+        font-weight: bolder;
+        padding: 15px 0;
+        margin: 6px;
+        border: 2px solid grey;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="main" >
+        <h1>Text Convertor</h1>
+        <input type="text" id="result"><br><br>
+        <button onclick="uppercase()"> Uppercase</button>
+        <button onclick="replace()">Replace</button>
+        <button onclick="length()">Length</button>
+        <button onclick="lowercase()">Lowercase</button> <br><br>
+        <button onclick="concat()">Concat</button>
+        <button onclick="trim()">Trim</button>
+        <button onclick="split()">Split</button>
+        <button onclick="repeat()">Repeat</button>
+    </div>
+       <script>
+
+        function uppercase() {
+          let a = document.getElementById("result").value;
+          document.getElementById("result").value = a.toUpperCase();
+        }
+  
+        function lowercase() {
+          let b = document.getElementById("result").value;
+          document.getElementById("result").value = b.toLowerCase();
+        }
+  
+        function replace() {
+          let c = document.getElementById("result").value;
+          document.getElementById("result").value = c.replace('PRINCY PATEL');
+        }
+  
+        function length() {
+          let d = document.getElementById("result").value;
+          document.getElementById("result").value = d.length;
+        }
+  
+        function concat() {
+          let d = document.getElementById("result").value;
+          document.getElementById("result").value = d.concat(' PRINCY');
+        }
+  
+        function trim() {
+          let e = document.getElementById("result").value;
+          document.getElementById("result").value = e.trim();
+        }
+  
+        function split() {
+          let f = document.getElementById("result").value;
+          document.getElementById("result").value = f.split('');
+        }
+  
+        function repeat() {
+          let g = document.getElementById("result").value;
+          document.getElementById("result").value = g.repeat(3);
+        }
+      </script>
+</body>
+
+</html>
