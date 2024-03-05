@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="date" id="first">
+    <input type="date" id="second">
+    <button onclick="handlecheck()">Check</button>
+    <button onclick="handlecheckDate()">CheckDate</button>
+    <button onclick="handlecheckMonth()">CheckMonth</button>
+    <button onclick="handlecheckYear()">CheckYear</button>
+
+    <script>
+        let a = document.getElementById("first");
+        let b = document.getElementById("second");
+
+        function handlecheckDate() {
+            let c = new Date(a.value);
+            let d = c.getDate();
+
+            console.log(d);
+
+            let e = new Date(b.value);
+            let f = e.getDate();
+
+            console.log(f);
+
+
+        }
+
+        function handlecheckMonth() {
+            let c = new Date(a.value);
+            let d = c.getMonth() + 1;
+
+            console.log(d);
+
+
+            let e = new Date(b.value);
+            let f = e.getMonth +1;
+
+            console.log(f);
+        }
+
+        function handlecheckYear(){
+
+            let c = new Date(a.value);
+            let d = c.getFullYear();
+
+            console.log(d);
+
+            let e = new Date(b.value);
+            let f = e.getFullYear();
+
+            console.log(f);
+        }
+
+
+        function handlecheck() {
+            console.log(a);
+            console.log(a.value)
+            console.log(typeof a.value)
+            console.log(parseInt(a.value));
+            console.log(typeof parseInt(a.value));
+
+            console.log(b);
+            console.log(b.value)
+            console.log(typeof b.value)
+            console.log(parseInt(b.value));
+            console.log(typeof parseInt(b.value));
+
+
+            // let c = a.value.getData()
+            // console.log(c);
+
+
+            // console.log(b);
+            // console.log(typeof b.value);
+
+            console.log(parseInt(b.value) - parseInt(a.value))
+
+        }
+    
+
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
